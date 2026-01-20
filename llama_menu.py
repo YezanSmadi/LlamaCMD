@@ -8,7 +8,7 @@ import os
 
 def home():
     title_message = colored("Welcome to LlamaCMD", "white")
-    version_message = colored("Version 0.1", "grey")
+    version_message = colored("Version 0.8", "light_grey")
     console_width, _ = shutil.get_terminal_size()
     title_centered = title_message.center(console_width)
     version_centered = version_message.center(console_width)
@@ -16,7 +16,7 @@ def home():
     llama1 = colored("Menu:", "white", attrs=["bold", "underline"])
     llama2 = colored("1. Re-encode (with optional cut)", "yellow")
     llama3 = colored("2. Mux (with optional cut)", "yellow")
-    llama4 = colored("3. Download (not implemented yet)", "grey")
+    llama4 = colored("3. Download (not implemented)", "dark_grey")
     llama5 = colored("4. Exit", "light_red")
 
     llama_home = f"""\

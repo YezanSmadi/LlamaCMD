@@ -17,21 +17,19 @@ global encode_timestamps
 global mux
 
 
-encode_timestamps = shlex.split(
-    'ffmpeg -vsync -1 -ss {trim_start} -i "{input_name}" -to {trim_len} -crf 16 -c:v libx264 -profile:v high10 -level:v 4.0 -c:a copy -movflags +faststart "{output_name}"')
 mux = shlex.split(
     'ffmpeg -ss {trim_start} -i "{input_name}" -t {trim_len} -map 0 -c copy -avoid_negative_ts make_zero "{output_name}"')
 
 
+#####   Message For Exiting LlamaCMD    #####
 def leave_llama():
     print(colored("Pleasure working with you!", "cyan"))
     print(colored("See ya later!", "cyan"))
     print()
     exit()
 
+
 #####   Validate File Input     #####
-
-
 def input_valid():
     while True:
         global input_name
@@ -51,6 +49,7 @@ def input_valid():
     return (input_name)
 
 
+#####   Pass User Inputs Into FFMPEG Then Convert it into {str} so FFMPEG Can Read It    #####
 def encode_passthru(output_name):
     encode_input = f'ffmpeg -vsync -1 -i "{input_name}" -crf 16 -c:v libx264 -profile:v high10 -level:v 4.0 -c:a copy -movflags +faststart "{output_name}"'
     str(encode_input)
@@ -67,13 +66,14 @@ def encode_trim_passthru(output_name, trim_start, trim_len):
     return (encode_trim)
 
 
+#####   Message For When FFMPEG is Done With File   #####
 def file_done():
     print()
     print(colored("All done!", "light_green"))
     print()
     while True:
         confirmation = input(
-            colored("Would you like to go back to the ", "magenta") + colored("Main Menu ", "yellow") + colored("or ", "magenta") + colored("Exit", "light_red") + colored("? ", "magenta"))
+            colored("Would you like to go back to the ", "magenta") + colored("Main Menu ", "light_yellow") + colored("or ", "magenta") + colored("Exit", "light_red") + colored("? ", "magenta"))
         if confirmation.lower() == "main menu":
             llama_menu.home_screen()
             break
