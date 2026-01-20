@@ -62,8 +62,7 @@ def menu_options():
     print()
 
     if menu_choice == 1:
-        llama_opts.llama_encode(input_name, trim_choice, trim_start,
-                                trim_len, output_name, confirmation, timestamp)
+        llama_opts.llama_encode(trim_choice, confirmation, timestamp)
     elif menu_choice == 2:
         llama_opts.llama_mux()
     elif menu_choice == 4:
