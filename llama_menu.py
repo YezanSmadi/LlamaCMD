@@ -1,34 +1,37 @@
 import shutil
-from termcolor import colored
+try:
+    from termcolor import colored
+except ImportError:
+    def colored(text, color=None, attrs=None):
+        return text
 import llama_opts
 import os
 
+
 #####    Home Screen     #####
-
-
 def home():
     title_message = colored("Welcome to LlamaCMD", "white")
-    version_message = colored("Version 0.8", "light_grey")
+    version_message = colored("Version 1.0", "light_grey")
     console_width, _ = shutil.get_terminal_size()
     title_centered = title_message.center(console_width)
     version_centered = version_message.center(console_width)
 
-    llama1 = colored("Menu:", "white", attrs=["bold", "underline"])
-    llama2 = colored("1. Re-encode (with optional cut)", "yellow")
-    llama3 = colored("2. Mux (with optional cut)", "yellow")
-    llama4 = colored("3. Download (not implemented)", "dark_grey")
-    llama5 = colored("4. Exit", "light_red")
+    llama0 = colored("Menu:", "white", attrs=["bold", "underline"])
+    llama1 = colored("1. Re-encode", "yellow")
+    llama2 = colored("2. Mux", "yellow")
+    # llama3 = colored("3. Batch (not implemented)", "dark_grey")
+    llama4 = colored("4. Exit", "light_red")
 
     llama_home = f"""\
                          g
                        e8lprt
                        led4lmf9
                       jbagph91
-                      ia0flo                               {llama1}
-                      jb0fqt                               {llama2}
-        orppqooo      iabfqt                               {llama3}
-     lllmlklllklmmnnnlhadiqt                               {llama4}
-    bfgfgaebeghjklllkkhdems                                {llama5}
+                      ia0flo                               {llama0}
+                      jb0fqt                               {llama1}
+        orppqooo      iabfqt                               {llama2}
+     lllmlklllklmmnnnlhadiqt                               
+    bfgfgaebeghjklllkkhdems                                {llama4}
     abbcgc3cadeegihgjkljjpr
     7a8aegX7770bge2aiihlqq
      hb6TY7bfcabc67338emo
