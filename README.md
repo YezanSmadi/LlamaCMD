@@ -1,6 +1,10 @@
-// Welcome to LlamaCMD //
+<p style="text-align: center;">// Welcome to LlamaCMD //</p>
 
+<div style="text-align: center;">
+  
 <img width="256" height="256" alt="llama" src="https://github.com/user-attachments/assets/9edb2907-db0a-406a-b8aa-4f7e0f78b7c1" />
+
+</div>
 
 This tool is intended to help accelerate your video editing workflow by allowing you to 
 encode/mux clips in one place with the choice of trimming those clips down without having to
