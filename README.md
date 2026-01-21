@@ -1,7 +1,7 @@
-<p style="text-align: center;">// Welcome to LlamaCMD //</p>
+<div align="center">
 
-<div style="text-align: center;">
-  
+# // Welcome to LlamaCMD //
+
 <img width="256" height="256" alt="llama" src="https://github.com/user-attachments/assets/9edb2907-db0a-406a-b8aa-4f7e0f78b7c1" />
 
 </div>
