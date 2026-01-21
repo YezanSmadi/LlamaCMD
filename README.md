@@ -1,4 +1,4 @@
-\\// Welcome to LlamaCMD \\//
+// Welcome to LlamaCMD //
 
 This tool is intended to help accelerate your video editing workflow by allowing you to 
 encode/mux clips in one place with the choice of trimming those clips down without having to
