@@ -28,7 +28,7 @@ use it.
 If you don't know how to do it, I'll guide you through it.
 
 #
-First, place the .exe in a cozy folder it can sit in. Keep it secret, keep it safe.
+First, keep the LlamaCMD folder in a safe place it can sit in. Keep it secret, keep it safe.
 
 Copy the directory address to this folder by double clicking an empty area in the bar 
 detailing the address at the top of your file explorer, selecting the entire address, and 
@@ -43,8 +43,8 @@ From here, click on "Environment Variables..." at the bottom. This will pop up y
 (we have one last window after this, I promise). Here, under "User variables for ____" click on the 
 "Path" row and hit the "Edit..." button.
 
-Now, hit the new button and paste the directory address where LlamaCMD.exe resides into the box. Hit    
-"okay". Now close out all those windows littered everywhere. 
+Now, hit the new button and paste the directory address where LlamaCMD.exe resides into the box (hopefully you 
+have kept the LlamaCMD folder safe) and hit "Okay". Now close out all those windows littered everywhere. 
 
 You can now use LlamaCMD anywhere.
 #
