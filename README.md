@@ -14,7 +14,9 @@ Clip aggregation in video editing is one of the most time consuming parts of the
 so hopefully this helps.
 
 <div align="center">
-  
+
+<img width="979" height="512" alt="LlamaCMD_WR3oxuZA7r" src="https://github.com/user-attachments/assets/7eecdd12-be24-4efe-b428-9ef0431af644" />
+
 ## // Set Up //
 
 </div>
