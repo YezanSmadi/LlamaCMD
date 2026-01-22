@@ -15,7 +15,7 @@ so hopefully this helps.
 
 <div align="center">
 
-<img width="979" height="512" alt="LlamaCMD_WR3oxuZA7r" src="https://github.com/user-attachments/assets/7eecdd12-be24-4efe-b428-9ef0431af644" />
+<img width="976" height="510" alt="LlamaCMD_WR3oxuZA7r" src="https://github.com/user-attachments/assets/a7ce933d-dc8c-4365-bf09-994dfed7fbd8" />
 
 ## // Set Up //
 
