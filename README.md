@@ -37,13 +37,13 @@ copying it. We'll need this for later.
 Next, go to your control panel. Click "System". It'll pop up another window detailing your PC.
 
 Scroll to the bottom and click "Advanced System Settings". This will pop up a tiny window that 
-should already be on the Advanced tab.
+should already be on the "Advanced" tab.
 
 From here, click on "Environment Variables..." at the bottom. This will pop up yet another window 
 (we have one last window after this, I promise). Here, under "User variables for ____" click on the 
 "Path" row and hit the "Edit..." button.
 
-Now, hit the new button and paste the directory address where LlamaCMD.exe resides into the box (hopefully you 
+Now, hit the "New" button and paste the directory address where LlamaCMD.exe resides into the box (hopefully you 
 have kept the LlamaCMD folder safe) and hit "Okay". Now close out all those windows littered everywhere. 
 
 You can now use LlamaCMD anywhere.
